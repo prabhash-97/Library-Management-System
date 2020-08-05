@@ -1,6 +1,6 @@
 ﻿namespace SMALL_LIBRARY_MANAGEMENT_SYSTEM
 {
-    partial class Add_Books
+    partial class Delete_Books
     {
         /// <summary>
         /// Required designer variable.
@@ -36,14 +36,14 @@
             System.Windows.Forms.Label book_PriceLabel;
             System.Windows.Forms.Label book__QuantityLabel;
             System.Windows.Forms.Label book_PublicationLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Books));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Delete_Books));
             this.libraryDataSet = new SMALL_LIBRARY_MANAGEMENT_SYSTEM.libraryDataSet();
             this.addBooksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addBooksTableAdapter = new SMALL_LIBRARY_MANAGEMENT_SYSTEM.libraryDataSetTableAdapters.AddBooksTableAdapter();
             this.tableAdapterManager = new SMALL_LIBRARY_MANAGEMENT_SYSTEM.libraryDataSetTableAdapters.TableAdapterManager();
             this.addBooksBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -52,9 +52,6 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.addBooksBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.book_IdTextBox = new System.Windows.Forms.TextBox();
             this.book_NameTextBox = new System.Windows.Forms.TextBox();
             this.book_AuthorTextBox = new System.Windows.Forms.TextBox();
@@ -62,8 +59,8 @@
             this.book_PriceTextBox = new System.Windows.Forms.TextBox();
             this.book__QuantityTextBox = new System.Windows.Forms.TextBox();
             this.book_PublicationTextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             book_IdLabel = new System.Windows.Forms.Label();
             book_NameLabel = new System.Windows.Forms.Label();
             book_AuthorLabel = new System.Windows.Forms.Label();
@@ -82,7 +79,7 @@
             // 
             book_IdLabel.AutoSize = true;
             book_IdLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            book_IdLabel.Location = new System.Drawing.Point(8, 22);
+            book_IdLabel.Location = new System.Drawing.Point(17, 27);
             book_IdLabel.Name = "book_IdLabel";
             book_IdLabel.Size = new System.Drawing.Size(50, 15);
             book_IdLabel.TabIndex = 1;
@@ -92,7 +89,7 @@
             // 
             book_NameLabel.AutoSize = true;
             book_NameLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            book_NameLabel.Location = new System.Drawing.Point(8, 66);
+            book_NameLabel.Location = new System.Drawing.Point(17, 49);
             book_NameLabel.Name = "book_NameLabel";
             book_NameLabel.Size = new System.Drawing.Size(70, 15);
             book_NameLabel.TabIndex = 3;
@@ -102,7 +99,7 @@
             // 
             book_AuthorLabel.AutoSize = true;
             book_AuthorLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            book_AuthorLabel.Location = new System.Drawing.Point(8, 99);
+            book_AuthorLabel.Location = new System.Drawing.Point(17, 75);
             book_AuthorLabel.Name = "book_AuthorLabel";
             book_AuthorLabel.Size = new System.Drawing.Size(78, 15);
             book_AuthorLabel.TabIndex = 5;
@@ -112,7 +109,7 @@
             // 
             purchase_DateLabel.AutoSize = true;
             purchase_DateLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            purchase_DateLabel.Location = new System.Drawing.Point(8, 125);
+            purchase_DateLabel.Location = new System.Drawing.Point(17, 102);
             purchase_DateLabel.Name = "purchase_DateLabel";
             purchase_DateLabel.Size = new System.Drawing.Size(85, 15);
             purchase_DateLabel.TabIndex = 7;
@@ -122,7 +119,7 @@
             // 
             book_PriceLabel.AutoSize = true;
             book_PriceLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            book_PriceLabel.Location = new System.Drawing.Point(6, 151);
+            book_PriceLabel.Location = new System.Drawing.Point(17, 127);
             book_PriceLabel.Name = "book_PriceLabel";
             book_PriceLabel.Size = new System.Drawing.Size(66, 15);
             book_PriceLabel.TabIndex = 9;
@@ -132,7 +129,7 @@
             // 
             book__QuantityLabel.AutoSize = true;
             book__QuantityLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            book__QuantityLabel.Location = new System.Drawing.Point(8, 180);
+            book__QuantityLabel.Location = new System.Drawing.Point(17, 153);
             book__QuantityLabel.Name = "book__QuantityLabel";
             book__QuantityLabel.Size = new System.Drawing.Size(89, 15);
             book__QuantityLabel.TabIndex = 11;
@@ -142,7 +139,7 @@
             // 
             book_PublicationLabel.AutoSize = true;
             book_PublicationLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            book_PublicationLabel.Location = new System.Drawing.Point(8, 209);
+            book_PublicationLabel.Location = new System.Drawing.Point(17, 179);
             book_PublicationLabel.Name = "book_PublicationLabel";
             book_PublicationLabel.Size = new System.Drawing.Size(99, 15);
             book_PublicationLabel.TabIndex = 13;
@@ -170,10 +167,10 @@
             // 
             // addBooksBindingNavigator
             // 
-            this.addBooksBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.addBooksBindingNavigator.AddNewItem = null;
             this.addBooksBindingNavigator.BindingSource = this.addBooksBindingSource;
             this.addBooksBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.addBooksBindingNavigator.DeleteItem = null;
+            this.addBooksBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.addBooksBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -184,10 +181,7 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.addBooksBindingNavigatorSaveItem,
-            this.toolStripButton1,
-            this.toolStripButton2});
+            this.bindingNavigatorDeleteItem});
             this.addBooksBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.addBooksBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.addBooksBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -195,18 +189,9 @@
             this.addBooksBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.addBooksBindingNavigator.Name = "addBooksBindingNavigator";
             this.addBooksBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.addBooksBindingNavigator.Size = new System.Drawing.Size(729, 25);
+            this.addBooksBindingNavigator.Size = new System.Drawing.Size(463, 25);
             this.addBooksBindingNavigator.TabIndex = 0;
             this.addBooksBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
@@ -214,6 +199,15 @@
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -275,41 +269,11 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // addBooksBindingNavigatorSaveItem
-            // 
-            this.addBooksBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.addBooksBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("addBooksBindingNavigatorSaveItem.Image")));
-            this.addBooksBindingNavigatorSaveItem.Name = "addBooksBindingNavigatorSaveItem";
-            this.addBooksBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.addBooksBindingNavigatorSaveItem.Text = "Save Data";
-            this.addBooksBindingNavigatorSaveItem.Click += new System.EventHandler(this.addBooksBindingNavigatorSaveItem_Click);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.ToolTipText = "Cancel Update";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
             // book_IdTextBox
             // 
             this.book_IdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Id", true));
             this.book_IdTextBox.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.book_IdTextBox.Location = new System.Drawing.Point(109, 14);
+            this.book_IdTextBox.Location = new System.Drawing.Point(121, 19);
             this.book_IdTextBox.Name = "book_IdTextBox";
             this.book_IdTextBox.Size = new System.Drawing.Size(200, 23);
             this.book_IdTextBox.TabIndex = 2;
@@ -318,7 +282,7 @@
             // 
             this.book_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Name", true));
             this.book_NameTextBox.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.book_NameTextBox.Location = new System.Drawing.Point(109, 58);
+            this.book_NameTextBox.Location = new System.Drawing.Point(121, 46);
             this.book_NameTextBox.Name = "book_NameTextBox";
             this.book_NameTextBox.Size = new System.Drawing.Size(200, 23);
             this.book_NameTextBox.TabIndex = 4;
@@ -327,7 +291,7 @@
             // 
             this.book_AuthorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Author", true));
             this.book_AuthorTextBox.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.book_AuthorTextBox.Location = new System.Drawing.Point(109, 91);
+            this.book_AuthorTextBox.Location = new System.Drawing.Point(121, 72);
             this.book_AuthorTextBox.Name = "book_AuthorTextBox";
             this.book_AuthorTextBox.Size = new System.Drawing.Size(200, 23);
             this.book_AuthorTextBox.TabIndex = 6;
@@ -336,16 +300,16 @@
             // 
             this.purchase_DateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.addBooksBindingSource, "Purchase Date", true));
             this.purchase_DateDateTimePicker.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.purchase_DateDateTimePicker.Location = new System.Drawing.Point(109, 117);
+            this.purchase_DateDateTimePicker.Location = new System.Drawing.Point(121, 96);
             this.purchase_DateDateTimePicker.Name = "purchase_DateDateTimePicker";
             this.purchase_DateDateTimePicker.Size = new System.Drawing.Size(200, 23);
             this.purchase_DateDateTimePicker.TabIndex = 8;
             // 
             // book_PriceTextBox
             // 
-            this.book_PriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Price", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
+            this.book_PriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Price", true));
             this.book_PriceTextBox.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.book_PriceTextBox.Location = new System.Drawing.Point(109, 143);
+            this.book_PriceTextBox.Location = new System.Drawing.Point(121, 121);
             this.book_PriceTextBox.Name = "book_PriceTextBox";
             this.book_PriceTextBox.Size = new System.Drawing.Size(200, 23);
             this.book_PriceTextBox.TabIndex = 10;
@@ -354,7 +318,7 @@
             // 
             this.book__QuantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book  Quantity", true));
             this.book__QuantityTextBox.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.book__QuantityTextBox.Location = new System.Drawing.Point(109, 172);
+            this.book__QuantityTextBox.Location = new System.Drawing.Point(121, 150);
             this.book__QuantityTextBox.Name = "book__QuantityTextBox";
             this.book__QuantityTextBox.Size = new System.Drawing.Size(200, 23);
             this.book__QuantityTextBox.TabIndex = 12;
@@ -363,10 +327,23 @@
             // 
             this.book_PublicationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Publication", true));
             this.book_PublicationTextBox.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.book_PublicationTextBox.Location = new System.Drawing.Point(109, 201);
+            this.book_PublicationTextBox.Location = new System.Drawing.Point(121, 176);
             this.book_PublicationTextBox.Name = "book_PublicationTextBox";
             this.book_PublicationTextBox.Size = new System.Drawing.Size(200, 23);
             this.book_PublicationTextBox.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(60, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(301, 43);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Enter Book Id You want to delete:";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -385,36 +362,25 @@
             this.groupBox1.Controls.Add(this.book__QuantityTextBox);
             this.groupBox1.Controls.Add(book_PublicationLabel);
             this.groupBox1.Controls.Add(this.book_PublicationTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(361, 54);
+            this.groupBox1.Location = new System.Drawing.Point(40, 95);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(356, 246);
-            this.groupBox1.TabIndex = 15;
+            this.groupBox1.Size = new System.Drawing.Size(363, 255);
+            this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(12, 37);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(333, 273);
-            this.panel1.TabIndex = 16;
-            // 
-            // Add_Books
+            // Delete_Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(729, 322);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(463, 450);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.addBooksBindingNavigator);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Add_Books";
+            this.Name = "Delete_Books";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add_Books";
-            this.Load += new System.EventHandler(this.Add_Books_Load);
+            this.Text = "Delete_Books";
+            this.Load += new System.EventHandler(this.Delete_Books_Load);
             ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addBooksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addBooksBindingNavigator)).EndInit();
@@ -434,8 +400,8 @@
         private libraryDataSetTableAdapters.AddBooksTableAdapter addBooksTableAdapter;
         private libraryDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator addBooksBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -444,7 +410,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton addBooksBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox book_IdTextBox;
         private System.Windows.Forms.TextBox book_NameTextBox;
         private System.Windows.Forms.TextBox book_AuthorTextBox;
@@ -452,9 +417,7 @@
         private System.Windows.Forms.TextBox book_PriceTextBox;
         private System.Windows.Forms.TextBox book__QuantityTextBox;
         private System.Windows.Forms.TextBox book_PublicationTextBox;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel1;
     }
 }

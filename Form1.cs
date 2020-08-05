@@ -51,5 +51,11 @@ namespace SMALL_LIBRARY_MANAGEMENT_SYSTEM
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Delete_Books del = new Delete_Books();
+            del.Show();
+        }
     }
 }

@@ -54,7 +54,6 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addBooksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addBooksBindingNavigator)).BeginInit();
@@ -69,9 +68,9 @@
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(12, 56);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 40);
+            this.button1.Size = new System.Drawing.Size(207, 40);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Search Book";
+            this.button1.Text = "Click Here To Search Books:";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -100,7 +99,7 @@
             this.addBooksBindingNavigator.AddNewItem = null;
             this.addBooksBindingNavigator.BindingSource = this.addBooksBindingSource;
             this.addBooksBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.addBooksBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.addBooksBindingNavigator.DeleteItem = null;
             this.addBooksBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -111,7 +110,6 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
-            this.bindingNavigatorDeleteItem,
             this.toolStripButton1});
             this.addBooksBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.addBooksBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -262,15 +260,6 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "Book Publication";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
             // Search_Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +269,7 @@
             this.Controls.Add(this.addBooksDataGridView);
             this.Controls.Add(this.addBooksBindingNavigator);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Search_Books";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search_Books";
@@ -321,6 +311,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
     }
 }

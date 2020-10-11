@@ -322,7 +322,7 @@
             // 
             // book_PriceTextBox
             // 
-            this.book_PriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Price", true));
+            this.book_PriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.addBooksBindingSource, "Book Price", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.book_PriceTextBox.Location = new System.Drawing.Point(102, 121);
             this.book_PriceTextBox.Name = "book_PriceTextBox";
             this.book_PriceTextBox.Size = new System.Drawing.Size(200, 20);
@@ -390,6 +390,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.addBooksBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Update_Books";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update_Books";

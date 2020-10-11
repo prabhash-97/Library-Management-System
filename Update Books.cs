@@ -54,7 +54,7 @@ namespace SMALL_LIBRARY_MANAGEMENT_SYSTEM
             string value;
             int index;
             value = Microsoft.VisualBasic.Interaction.InputBox("Book Id.",
-                "Find Book");
+                "Find Book To Update");
             index = addBooksBindingSource.Find("Book Id", value);
             addBooksBindingSource.Position = index;
         }

@@ -41,5 +41,17 @@ namespace SMALL_LIBRARY_MANAGEMENT_SYSTEM
             index = addBooksBindingSource.Find("Book Id", value);
             addBooksBindingSource.Position = index;
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want to exit?", this.Text,
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (answer == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

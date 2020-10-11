@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SMALL_LIBRARY_MANAGEMENT_SYSTEM
 {
-    public partial class Form1 : Form
+    public partial class BookMaintain : Form
     {
-        public Form1()
+        public BookMaintain()
         {
             InitializeComponent();
         }
